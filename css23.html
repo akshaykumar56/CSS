@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+          CSS Transitions
+        </title>
+        <style>
+          .box{
+              display: flex;
+              align-items:center;
+              justify-content:center;
+              background:red;
+              /* border:2px solid red; */
+              border-radius:8px;
+              height:200px;
+              width:200px;
+              transition:all 0.5s ease-in-out;
+          }
+
+          .box:hover
+          {
+              
+              /* transform:skew(40deg); */
+                transform:scale(1.125);
+                transform:rotate(-2deg); 
+                /* background-color:blue;
+                box-shadow: 3px 3px white; */
+                
+                /* transform: translateX(23px);
+                transform: translateY(23px); */
+                  
+              /* transform:translate(23px,23px); */
+               
+          }
+
+        .container
+
+        {
+          display: flex;
+          background-color: black;
+          height:400px;
+          align-items:center;
+          justify-content:center;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+            This is my box
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            visiblity and z-index
+        </title>
+        <style>
+         .box{
+             width:170px;
+             height:140px;
+             border: 2px solid red;
+         }
+
+         #box1{
+             position:relative;
+             top:49px;
+             z-index:-2;
+            background-color: red;
+         }
+         
+         #box2{
+             position:relative;
+             top:34px;
+             z-index:-1;
+             /* z-index does not work on static position  */
+              /*display:none; /*--> will hide the element and space */
+             /* visibility: hidden;  /*will hide the element but not the space*/
+            background-color: blue;
+         }
+         
+         #box3{
+            background-color: green ;
+         }
+         
+         #box4{
+            background-color: yellow;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1"> </div>
+        <div class="box" id="box2"> </div>
+        <div class="box" id="box3"> </div>
+        <div class="box" id="box4"></div>
+    </body>
+</html>

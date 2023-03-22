@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Before and After Pseudo selector
+        </title>
+        <style>
+            body{
+                background-color: black;
+                color:grey;
+                margin:0px;
+                padding:0px;
+                background: url('tree-736885_960_720.webp');
+                background-size:cover;
+                }
+          .navigation
+          {
+              font-size: 20px;
+              display:flex;
+              height:50px;
+          }
+         .item:hover
+         {
+            color: yellow;
+         }
+        header
+          {
+            display:flex;
+            flex-direction:column;
+          }
+          li
+          {
+              list-style:none;
+              padding:34px 24px;
+          }
+
+          section
+         {
+          display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 183px;
+         justify-content: center;
+          margin: 2px 23px;
+         }
+
+          h1{
+              font-size:41px;
+          }
+
+          /* section::before
+          {
+              content:"this is a content"
+          } */
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">contact Us</li>
+            </ul>
+        </nav>
+      </header>
+      
+      <section>
+        <h1>welcome to coding world </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque commodi velit reprehenderit incidunt at quos id rerum cupiditate voluptatem libero, officiis veniam nulla optio, facere, hic ex asperiores expedita autem repellat a exercitationem. Earum.</p>
+    </section>
+    <hr>
+    </body>
+</html>

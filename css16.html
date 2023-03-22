@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+        Advanced CSS selectors
+        </title>
+        <style>
+       h1{
+           background-color: red;
+           color:black;
+           font-weight: bold;
+           text-align: center;
+       }
+       div p{
+           color:yellow;
+           font-weight: bold;
+       }
+       div li p{
+           color:red;
+           font-weight: bold;
+       }
+
+       /* affect only direct child of div */
+       div  >p{   
+           color:blue;
+           font-weight: bold;
+       }
+
+
+       div +p{
+           color:white;
+           background-color:red;
+       }
+        </style>
+    </head>
+    <body>
+       <h1>This is no more selectors</h1> 
+       <div class="container">
+           <div class="row">
+               <p>this is a paragraph</p>
+               <ul>
+                   <li class="item"><p>this is inside li</p></li>
+               </ul>
+           </div>
+           <p>this is another paragraph </p>
+       </div>
+       <p>this is outermost paragraph </p>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+         CSS variable/custom Properties
+        </title>
+        <style>
+            :root
+            {
+                --primary-color:blue;
+                --danger-color:red;
+                --maxw:344px;
+            }
+
+        .box
+        {
+            /* --box-color:violet; */
+            height:200px;
+            width:200px;
+            background-color:var(--primary-color);
+            box-shadow:2px 2px var(--danger-color);
+            border:2px solid red;
+             margin:2px 9px;
+        }
+        .container
+        {
+            max-width: var(--maxw);
+            border:2px solid red;
+            display:flex;
+            background-color:var(--danger-color);
+            align-items: centre;
+            justify-items: centre;
+            margin:auto;
+            
+        }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <div class="box"></div>
+           <div class="box"></div>
+           <div class="box"></div>
+           <div class="box"></div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            CSS box model
+        </title>
+        <style>
+            *{
+              box-sizing: border-box;
+              margin:0;
+              padding:0;
+            }
+        .container{
+            background-color:blanchedalmond;
+            border:3px solid rgb(90, 120, 140);
+            border-radius: 13px;
+            /* padding:top 9px;
+            padding:bottom 9px;
+            padding:left 9px;
+            padding:right 9px;
+             */
+
+             /* padding:23px 87px 16px 100px; (top right bottom left) */
+             padding: 14px 19px; /*padding y(top/bottom) x(left,right); */
+            margin:40px 19px 100px 90px;
+            box-sizing: border-box;
+        }
+        
+       
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h3>This is my heading </h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo labore dolor possimus earum amet perspiciatis eum libero nobis eius dicta
+        provident deleniti quidem laboriosam eaque, beatae laborum odit vitae dolores.</p>
+        </div>
+
+        <div class="container">
+        <h3>This is my heading </h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo labore dolor possimus earum amet perspiciatis eum libero nobis eius dicta
+        provident deleniti quidem laboriosam eaque, beatae laborum odit vitae dolores.</p>
+        </div>
+
+        <div class="container">
+        <h3>This is my heading </h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo labore dolor possimus earum amet perspiciatis eum libero nobis eius dicta
+        provident deleniti quidem laboriosam eaque, beatae laborum odit vitae dolores.</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            CSS templates very useful
+        </title>
+        <style>
+           
+          .container{
+              display:grid;
+              grid-gap:1rem;
+              background-color: green;
+              grid-template-areas: 'nav nav nav nav'
+               'section section section aside' ;
+          }  
+        
+          .bdr
+          {
+            border:2px solid black;
+            padding:23px;
+            background-color: white;
+          }
+
+          nav{
+           grid-area: nav;
+           }
+
+       section{
+           grid-area: section;
+       }
+
+       aside{
+           grid-area:aside;
+       }
+       @media only screen and (max-width:300px)
+         {
+           body
+             {
+                 display: block;
+                 background-color: red;
+             }
+         }
+
+         @media only screen and  (min-width:300px) and (max-width:500px)
+         {
+            body
+             {
+                 display: block;
+                 background-color: blue;
+
+             }
+             .container
+             {
+              
+              grid-template-areas: 'nav nav nav nav'
+               'section section section section' 
+               'aside aside aside aside';
+             }  
+
+             aside
+             {
+                 display: none;
+                }
+                
+                nav{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+         }
+
+         @media only screen and  (min-width:500px) and (max-width:800px)
+         {
+             body
+             {
+                 display: block;
+                 background-color:yellow;
+             }
+             .container
+             {
+              
+              grid-template-areas: 'nav nav nav nav'
+               'section section section section' 
+               'aside aside aside aside';
+             }  
+         }
+         
+         @media (min-width:800px)
+         {
+            body
+             {
+                 display: block;
+                 background-color:silver;
+             }
+         }
+
+      
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+           
+            <nav class="bdr">
+              <span> Home </span>  
+              <span> About </span> 
+              <span> ContactUs </span> 
+            </nav>
+
+            <section  class="bdr">
+                <h2>Learn Css hindi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni provident facere. Dolores porro eaque voluptatibus, nemo ab voluptates totam similique rem recusandae modi repellat corrupti provident dolorem praesentium sed nobis! Quod sit tempore dignissimos deserunt tenetur blanditiis vero? Officiis cumque esse sunt. Tempora facere maiores eos rem facilis ea quas voluptatem inventore natus enim odit aut repellendus voluptas expedita at itaque sunt asperiores assumenda debitis dicta neque, id laborum optio distinctio. Quas, facere. Nesciunt, asperiores sequi totam quia, tenetur dicta mollitia excepturi repellat neque maxime voluptatum dolores vero at voluptatibus. Velit quos sint placeat, quibusdam ipsam ducimus laboriosam, tempore totam quo est accusamus natus perspiciatis harum adipisci et aliquam? Voluptatum est doloremque minima distinctio corrupti reiciendis doloribus consectetur eaque? Ab facilis deleniti perferendis? Voluptas ut, minus corporis ipsa deserunt doloremque excepturi, eos nulla atque distinctio, vel deleniti. Quam, atque. Maxime libero ipsa ad neque officia illo, ducimus debitis quae, iusto animi earum sint hic incidunt rerum minus porro dolorum quam ea deserunt sit, magnam reprehenderit! Corporis facere at nobis dolorem excepturi incidunt earum itaque iure ipsam dolore fugit accusamus, necessitatibus a maxime qui distinctio! Impedit error libero iure corrupti exercitationem facilis, ad fugiat dolore, unde placeat laborum porro saepe veniam soluta, assumenda earum sit? Ipsum nobis doloremque quae fuga odit. Pariatur facilis assumenda delectus numquam deleniti tempora dolorum sapiente? Est quis magni possimus, tempore cumque amet aut asperiores accusantium. Consequuntur maiores repellendus voluptatum explicabo at, iure sint quo sapiente totam facere delectus nam maxime qui dignissimos, doloremque nulla rerum distinctio obcaecati. Sequi facilis, a et eius dolorem iusto alias similique! Ex, error quia esse quasi sed fugit libero impedit nulla voluptate adipisci fuga hic tenetur excepturi facilis fugiat officiis necessitatibus quam tempore natus dolorum. Temporibus eligendi mollitia consectetur expedita sit atque in ratione non ipsam dolores facilis architecto, esse cumque aperiam molestias nesciunt corrupti. Nam reprehenderit aut esse obcaecati voluptatibus! Obcaecati impedit commodi pariatur ipsa ad? Nobis culpa soluta, eaque magni hic, sunt asperiores modi quam quod maxime aperiam ducimus nostrum, inventore assumenda sed quaerat ex beatae quis porro ipsa. Ex expedita non illo vero, exercitationem, dolore ea voluptatem ducimus sed eligendi natus adipisci optio autem ad culpa! Animi reiciendis aspernatur in doloribus dicta voluptatibus illo quaerat modi? Asperiores earum voluptate placeat explicabo ad sed, ut quibusdam fugiat aperiam id enim repellendus quisquam error, dolore dolorum unde cupiditate molestias sequi voluptates culpa saepe praesentium ipsum! Nisi vero commodi praesentium.</p>
+            </section>
+
+        <aside  class="bdr">
+            <h1>More about us </h1>
+        </aside>
+
+        </div>
+    </body>
+</html>
